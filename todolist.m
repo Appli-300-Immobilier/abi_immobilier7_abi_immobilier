@@ -6,8 +6,8 @@ ABI IMMOBILIER Website
 ABI IMMOBILIER
 - **Directory:** abi_immobilier7_abi_immobilier
 - **Address/Contact:** 
-  - ??AGENCE IMMOBILI�RE
-  - ??Maisons � Terrains � Magasins �
+  - ??AGENCE IMMOBILIéRE
+  - ??Maisons é Terrains é Magasins é
   - ??Gestions de bien Immobilier
   - ????: +225 2731937576
   - 0703313371

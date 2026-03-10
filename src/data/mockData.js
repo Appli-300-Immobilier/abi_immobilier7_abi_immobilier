@@ -1,4 +1,4 @@
-// Catalogue de 100 biens pour ABI IMMOBILIER
+// Catalogue de 100 biens pour abi.immobilier7
 // Images générées dynamiquement par mots-clés pour assurer pertinence et unicité
 
 const SECTOR_KEYWORDS = {
@@ -14,15 +14,15 @@ const generateProducts = () => {
   const locations = ["Abidjan (Cocody)","Abidjan (Plateau)","Yamoussoukro","Abidjan (Marcory)","Bouaké","San-Pédro","Abidjan (Treichville)","Korhogo","Abidjan (Adjame)","Man"];
   for (let i = 1; i <= 100; i++) {
     const sector = sectors[i % sectors.length];
-    const productName = sector + " " + i;
+    const productName = `${sector} ${i}`;
     const location = locations[i % locations.length];
     products.push({
-      id: "prod-" + i,
+      id: `prod-${i}`,
       name: productName,
-      description: "Cette opportunité " + productName + " dans le secteur " + sector + " à " + location + " représente un investissement stratégique.",
+      description: `Cette opportunité ${productName} dans le secteur ${sector} à ${location} représente un investissement stratégique.`,
       price: 5000000 + (Math.floor(Math.random() * 100) * 1000000),
       category: sector,
-      imageUrl: "https://loremflickr.com/1200/1200/luxury,home,architecture?lock=" + i,
+      imageUrl: `https://loremflickr.com/1200/1200/luxury,home,architecture?lock=${i}`,
       stock: 1,
       featured: i % 8 === 0,
       location: location,
@@ -46,7 +46,7 @@ export const MOCK_DELIVERERS = [
 export const MOCK_USERS_LIST = [
   { id: 'u1', name: 'Jean Dupont', email: 'jean.dupont@email.com', role: 'user', status: 'Actif', joinDate: '12/01/2026' },
   { id: 'u2', name: 'Marie Sissoko', email: 'marie.s@email.com', role: 'user', status: 'Actif', joinDate: '15/01/2026' },
-  { id: 'u3', name: 'Aubry Admin', email: 'admin@abiimmobilier.cm', role: 'admin', status: 'Actif', joinDate: '01/01/2026' }
+  { id: 'u3', name: 'Aubry Admin', email: 'admin@example.cm', role: 'admin', status: 'Actif', joinDate: '01/01/2026' }
 ];
 
 export const MOCK_ORDERS = [
